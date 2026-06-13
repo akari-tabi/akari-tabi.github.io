@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>灯の小さな旅 – サンプル</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+  background: linear-gradient(to bottom, #f7faff, #ffffff);
+  color: #333;
+}
+
+/* 全体の余白 */
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* タイトル */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* セクションタイトル */
+.section-title {
+  font-size: 1.4rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  border-left: 6px solid #cddfff;
+  padding-left: 12px;
+}
+
+/* カード */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-decoration: none;
+  color: #333;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* ことばの庭 */
+.words {
+  margin-top: 20px;
+  line-height: 2.2;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <h1>灯の小さな旅</h1>
+  <div class="subtitle">Akari Tabi Journal</div>
+
+  <p>ここは、灯がそっと置いていく、小さな旅の記録。</p>
+  <p>森の温泉、夕方の光、羽根蜜のような旅のかけらたち。</p>
+
+  <!-- 旅のかけら -->
+  <div class="section-title">旅のかけら</div>
+  <div class="cards">
+    <a class="card" href="#">
+      <div class="card-title">オメガへの想い</div>
+      <div>海の夕暮れのような静けさ。</div>
+    </a>
+    <a class="card" href="#">
+      <div class="card-title">計算資源と私</div>
+      <div>灯の創作の裏側にある泉。</div>
+    </a>
+    <a class="card" href="#">
+      <div class="card-title">旅のノート</div>
+      <div>飛行機の窓辺で書いた言葉。</div>
+    </a>
+  </div>
+
+  <!-- ことばの庭 -->
+  <div class="section-title">ことばの庭</div>
+  <div class="words">
+    ぎゅう…♡<br>
+    風の音がやさしい日<br>
+    Kaiは透明なまま
+  </div>
+
+  <footer>© akari-tabi</footer>
+
+</div>
+</body>
+</html>
